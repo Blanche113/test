@@ -210,27 +210,27 @@ body {
     }
 
     .mnk1 {
-        background: url("./img/monke1.jpg");
+        background: url("img/monke1.jpg");
         transform: rotate(15deg) scale(110%);
         margin: 20px 0 0 10px;
         z-index: 1;
     }
 
     .mnk2 {
-        background: url("./img/monke2.jpg");
+        background: url("img/monke2.jpg");
         margin: 70px 0 0 60px;
         z-index: 2;
     }
 
     .mnk3 {
-        background: url("./img/monke3.jpg");
+        background: url("img/monke3.jpg");
         transform: rotate(-15deg) scale(110%);
         margin: 30px 0 0 120px;
         z-index: 1;
     }
 
     .mnk4 {
-        background: url("./img/monke4.jpg");
+        background: url("img/monke4.jpg");
         margin: 70px 0 0 190px;
         z-index: 2;
     }
