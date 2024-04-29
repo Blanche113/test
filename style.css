@@ -209,7 +209,7 @@ body {
         text-align: center;
         grid-area: 1 / 1 / 2 / 4;
     }
-    
+
     main {
         grid-area: 3 / 1 / 4 / 4;
         background-color: var(--lime);
@@ -221,79 +221,104 @@ body {
         min-height: 100%;
     }
 
+    .button-side {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+    }
+
     .photo {
+        display: flex;
+        width: fit-content;
+        max-height: fit-content;
         position: absolute;
-        margin: -250px 0 0 0;
         box-sizing: border-box;
-        background-color: var(--black)
         height: fit-content;
         z-index: 2;
         overflow: auto;
     }
 
-    .button {
-        width: 50px;
-        height: 50px;
-        background: transparent;
-        border: none;
-    }
-
-    .displayNone {
-        display: none;
-    }
-
     .mnk1 {
         background: url("img/monke1.jpg");
-        transform: rotate(15deg) scale(110%);
-        margin: 20px 0 0 10px;
+        transform: rotate(15deg) scale(130%);
+        top: 40px;
+        left: 40px;
         z-index: 1;
     }
 
     .mnk2 {
         background: url("img/monke2.jpg");
-        margin: 70px 0 0 60px;
+        transform: scale(110%);
+        top: 60px;
+        left: 120px;
         z-index: 2;
     }
 
     .mnk3 {
         background: url("img/monke3.jpg");
-        transform: rotate(-15deg) scale(110%);
-        margin: 30px 0 0 120px;
+        transform: rotate(-15deg) scale(130%);
+        top: 40px;
+        left: 200px;
         z-index: 1;
     }
 
     .mnk4 {
         background: url("img/monke4.jpg");
-        margin: 70px 0 0 190px;
+        transform: scale(110%);
+        top: 60px;
+        left: 280px;
         z-index: 2;
     }
 
     .mnk5 {
         background: url("img/monke5.jpg");
+        transform: rotate(-10deg) scale(130%);
+        top: 40px;
+        left: 360px;
         z-index: 1;
     }
 
     .mnk6 {
         background: url("./img/monke6.jpg");
+        transform: rotate(-15deg) scale(130%);
+        top: 40px;
+        left: 40px;
+        z-index: 1;
     }
 
     .mnk7 {
         background: url("./img/monke7.jpg");
+        transform: scale(110%);
+        top: 60px;
+        left: 120px;
+        z-index: 2;
     }
 
     .mnk8 {
         background: url("./img/monke8.jpg");
+        transform: rotate(15deg) scale(130%);
+        top: 40px;
+        left: 200px;
+        z-index: 1;
     }
 
     .mnk9 {
         background: url("./img/monke9.jpg");
+        transform: scale(110%);
+        top: 60px;
+        left: 280px;
+        z-index: 2;
     }
 
-    .mnk0 {
+    .mnk10 {
         background: url("./img/monke10.jpg");
+        transform: rotate(-15deg) scale(130%);
+        top: 40px;
+        left: 360px;
+        z-index: 1;
     }
 
-    .monkey{
+    .monkey {
         position: absolute;
         width: 70px;
         height: 70px;
@@ -303,14 +328,32 @@ body {
         background-position: center;
     }
 
+    .happy {
+        position: absolute;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .happy span {
+        display: block;
+        width: 100%;
+        margin-left: 8px;
+        color: var(--textDark);
+        font-size: 1.3em;
+        overflow: hidden;
+    }
+
     .top {
         position: relative;
         display: flex;
-        overflow: -moz-hidden-unscrollable;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
     }
 
     .scroll {
         display: flex;
+        flex-grow: 1;
         position: relative;
         overflow: hidden;
         width: 350px;
